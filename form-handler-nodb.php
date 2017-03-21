@@ -2,19 +2,20 @@
 // Emails form data to you and the person submitting the form
 // This version requires no database.
 // Set your email below
-$myemail = "ENTER_YOUR_EMAIL_HERE"; // Replace with your email, please
+$myemail = "info@haslovi.cz"; // Replace with your email, please
 
 // Receive and sanitize input
 $name = $_POST['name'];
 $email = $_POST['email'];
 $phone = $_POST['phone'];
 $message = $_POST['message'];
+$headers = "From:" . $email;
+$headers2 = "From:" . $myemail;
 
 // set up email
-$msg = "New contact form submission!\nName: " . $name . "\nEmail: " . $email . "\nPhone: " . $phone . "\nEmail: " . $email;
+$msg = "Gratulace, mate novou zpravu!\nName: " . $name . "\nEmail: " . $email . "\nPhone: " . $phone . "\nEmail: " . $email . "\n\nText zpravy:\n\n" . $message;
 $msg = wordwrap($msg,70);
-mail($myemail,"New Form Submission",$msg);
-mail($email,"Thank you for your form submission",$msg);
-echo 'Thank you for your submission.  Please <a href="index.html">Click here to return to our homepage.';
-
+mail($myemail,"Nový vzkaz z haslovi.cz",$msg,$headers);
+mail($email,"Děkujeme za Váš vzkaz!",$msg,$headers2);
+echo 'Děkujeme za váš vzkaz.  Prosím <a href="index.html">klikněte sem pro návrat na naše stránky.</a>';
 ?>
