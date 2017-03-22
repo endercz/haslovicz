@@ -18,7 +18,7 @@
     text-transform: none;
 }
 
-h1, h2 {
+h1, h2, h3 {
     text-transform: none;
     /*font-family: 'amazone_atregular', Arial*/
     font-family: var(--main-font-family);
@@ -57,5 +57,10 @@ h1, h2 {
 
 .img-responsive-custom {
     display: block;
+    max-width: 100%;
+}
+
+.img-responsive-about {
+    display: inline-block;
     max-width: 100%;
 }
