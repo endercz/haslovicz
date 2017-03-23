@@ -12,6 +12,10 @@ $message = $_POST['message'];
 $headers = "From:" . $email;
 $headers2 = "From:" . $myemail;
 
+// this is to be used as the fifth parameter of the 'mail function
+// which ensures proper filling out of the "from" field of the email
+$from = "-f " . $email;
+
 // set up email
 $msg = "Gratulace, mate novou zpravu!\nName: " . $name . "\nEmail: " . $email . "\nPhone: " . $phone . "\nEmail: " . $email . "\n\nText zpravy:\n\n" . $message;
 $msg = wordwrap($msg,70);
