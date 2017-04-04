@@ -22,15 +22,15 @@
 h1, h2, h3 {
     text-transform: none;
     /*font-family: 'amazone_atregular', Arial*/
-    font-family: var(--main-font-family);
+    font-family: 'Lemonada', 'Times New Roman', Arial;
 }
 
 .brand {
-    font-family: var(--main-font-family);
+    font-family: 'Lemonada', 'Times New Roman', Arial;
 }
 
 .brand-name {
-    font-family: var(--main-font-family);
+    font-family: 'Lemonada', 'Times New Roman', Arial;
 }
 
 .brand-before {
@@ -39,7 +39,7 @@ h1, h2, h3 {
 
 .navbar-nav {
     text-transform: none;
-    font-family: var(--navbar-font-family);
+    font-family: 'Lemonada', 'Times New Roman', Arial;
     /*font-size: 1.75em;*/
 }
 
@@ -52,7 +52,7 @@ h1, h2, h3 {
 }
 
 .navbar-brand {
-    font-family: var(--navbar-font-family);
+    font-family: 'Lemonada', 'Times New Roman', Arial;
     text-transform: none;
 }
 
