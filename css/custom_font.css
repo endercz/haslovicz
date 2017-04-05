@@ -19,7 +19,12 @@
     font-weight: bold;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     text-transform: none;
     /*font-family: 'amazone_atregular', Arial*/
     font-family: 'Lemonada', 'Times New Roman', Arial;
