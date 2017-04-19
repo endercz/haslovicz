@@ -18,8 +18,10 @@
     <link href="css/business-casual.css" rel="stylesheet">
 
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800"
+        rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic"
+        rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lemonada" rel="stylesheet">
     <link href="css/custom_font.css" rel="stylesheet" />
 
@@ -57,16 +59,14 @@
                     <iframe width="100%" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2565.1204982047448!2d15.773392315302985!3d49.99035027941454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470dcba12d497305%3A0x67c6930470e253b5!2zVmFsxI3DrWtvdmEgNiwgNTMwIDAyIE1pa3Vsb3ZpY2UsIMSMZXNrbw!5e0!3m2!1scs!2sch!4v1489943737815"></iframe>
                 </div>
                 <div class="col-md-4">
-                    <p><strong>Telefon:</strong>
-                        +420 603 456 271
+                    <p><strong>Telefon:</strong> +420 603 456 271
                     </p>
                     <p><strong>Email:</strong>
                         <a href="mailto:name@example.com">info@haslovi.cz</a>
                     </p>
-                    <p><strong>Adresa:</strong><br>
-                        Valčíkova 6
-                            <br>530 02 Mikulovice
-                            <br>Česká Republika
+                    <p><strong>Adresa:</strong><br> Valčíkova 6
+                        <br>530 02 Mikulovice
+                        <br>Česká Republika
                     </p>
                 </div>
                 <div class="clearfix"></div>
@@ -87,16 +87,14 @@
                     <iframe width="100%" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2707.6610095813026!2d8.41605429801596!3d47.2623316600716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4790067eb4e4692b%3A0xfb6958f6c36a7122!2sStehli+-+Seiden+-+Areal+11%2C+8912+Obfelden!5e0!3m2!1sen!2sch!4v1489647018299"></iframe>
                 </div>
                 <div class="col-md-4">
-                    <p><strong>Telefon:</strong>
-                        +41 78 689 42 31
+                    <p><strong>Telefon:</strong> +41 78 689 42 31
                     </p>
                     <p><strong>Email:</strong>
                         <a href="mailto:name@example.com">info@haslovi.cz</a>
                     </p>
-                    <p><strong>Adresa:</strong><br/>
-                        Stehli-Seiden-Areal 11
-                            <br>8912 Obfelden
-                            <br>Switzerland
+                    <p><strong>Adresa:</strong><br/> Stehli-Seiden-Areal 11
+                        <br>8912 Obfelden
+                        <br>Switzerland
                     </p>
                 </div>
                 <div class="clearfix"></div>
@@ -111,34 +109,45 @@
                         <strong>Kontaktní formulář</strong>
                     </h2>
                     <hr>
-                    <p>V případě jakýchkoli dotazů prosím vyplňte následující formulář a my se Vám pokusíme v co nejkratší době odpovědět.</p>
+                    <p>V případě jakýchkoli dotazů prosím vyplňte následující formulář a my se Vám pokusíme v co nejkratší době
+                        odpovědět.
+                    </p>
                     <!--COMMENT/UNCOMMENT THIS TO DISABLE/ENABLE SUBMIT BUTTON FUNCTIONALITY-->
                     <form role="form" id="contact-form" method="post" action="form-handler-nodb.php">
-                    <form role="form" id="contact-form">                        
-                        <div class="row">
-                            <div class="form-group col-lg-4">
-                                <label>Jméno</label>
-                                <input type="text" name="name" class="form-control">
+                        <form role="form" id="contact-form">
+                            <div class="row">
+                                <div class="form-group col-lg-4">
+                                    <label class="control-label">Jméno*</label>
+                                    <div class="input-group">
+                                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                        <input type="text" name="name" class="form-control">
+                                    </div>
+                                </div>
+                                <div id="idEmailDiv" class="form-group col-lg-4">
+                                    <label>Email*</label>
+                                    <div class="input-group">
+                                        <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                                        <input id="idEmailInput" type="email" name="email" class="form-control" aria-describedby="inputGroupError1Status" placeholder="Zadejte svou emailovou adresu">
+                                    </div>
+                                </div>
+                                <div class="form-group col-lg-4">
+                                    <label>Tel. číslo</label>
+                                    <div class="input-group">
+                                        <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+                                        <input type="tel" name="phone" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                                <div class="form-group col-lg-12">
+                                    <label>Zpráva</label>
+                                    <textarea class="form-control" name="message" rows="6"></textarea>
+                                </div>
+                                <div class="form-group col-lg-12">
+                                    <input type="hidden" name="save" value="contact">
+                                    <button type="submit" class="btn btn-success" id="submitButton">Odeslat</button>
+                                </div>
                             </div>
-                            <div class="form-group col-lg-4">
-                                <label>Email</label>
-                                <input type="email" name="email" class="form-control">
-                            </div>
-                            <div class="form-group col-lg-4">
-                                <label>Tel. číslo</label>
-                                <input type="tel" name="phone" class="form-control">
-                            </div>
-                            <div class="clearfix"></div>
-                            <div class="form-group col-lg-12">
-                                <label>Zpráva</label>
-                                <textarea class="form-control" name="message" rows="6"></textarea>
-                            </div>
-                            <div class="form-group col-lg-12">
-                                <input type="hidden" name="save" value="contact">
-                                <button type="submit" class="btn btn-success" id="submitButton">Odeslat</button>
-                            </div>
-                        </div>
-                    </form>
+                        </form>
                 </div>
             </div>
         </div>
@@ -162,6 +171,27 @@
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
     <script src="js/navbar.js"></script>
+
+    <!--<script>
+        $('#idEmailInput').on('keyup', function (ev) {
+            txt = ev.target.value;
+            newTxt = $('#idEmailInput')[0].value;
+            if (txt === "") {
+                $('#idEmailInput')[0].setAttribute("aria-describedby", "inputError2Status");
+                // $('#idEmailDiv').add('<span class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>')
+                $('#idEmailDiv').addClass("has-error").removeClass("has-success");
+                $('#idEmailSpan').removeClass("glyphicon glyphicon-ok").addClass("glyphicon glyphicon-remove")
+                $('#submitButton').prop('disabled', true);
+            }
+            else {
+                $('#idEmailInput')[0].setAttribute("aria-describedby", "inputSuccess2Status");
+                // $('#idEmailDiv').add('<span class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>')
+                $('#idEmailDiv').addClass("has-success").removeClass("has-error");
+                $('#idEmailSpan').removeClass("glyphicon glyphicon-remove").addClass("glyphicon glyphicon-ok")
+                $('#submitButton').prop('disabled', false);
+            }
+        });
+    </script>-->
 
 </body>
 
